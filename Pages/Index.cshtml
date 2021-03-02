@@ -1,0 +1,13 @@
+﻿@page
+
+<vc:greeting name="Boris"/>
+
+@await Component.InvokeAsync("Greeting", new
+{
+    name = "Jon"
+})
+
+@await Component.InvokeAsync("Greeting", new
+{
+    name = "Steve"
+})
